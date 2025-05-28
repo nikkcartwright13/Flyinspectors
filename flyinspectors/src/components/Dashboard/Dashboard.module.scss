@@ -1,22 +1,39 @@
 .dashboard {
     margin-top: 30px;
+    padding: 20px 0;
+    background-color: #f8f8f8;
+    min-height: 100vh;
 }
 
 .menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
     background-color: #dedcdc;
-    padding: 0;
+    padding: 12px 20px;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    flex-wrap: wrap;
 
     a {
         text-decoration: none;
-        color: #000;
+        color: #222;
         font-size: 16px;
-        padding: 11px 0;
+        font-weight: 500;
+        padding: 10px 16px;
+        border-radius: 6px;
+        transition: all 0.2s ease;
 
         &:hover {
-            color: #4e4e4e;
+            background-color: #c9c9c9;
+            color: #000;
         }
     }
+}
+
+.active {
+    background-color: #0930cd;
+    color: white !important;
+    border-radius: 6px;
 }

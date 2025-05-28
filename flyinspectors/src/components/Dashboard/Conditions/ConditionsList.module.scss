@@ -1,0 +1,51 @@
+.addHeader {
+  color: #007bff;
+  margin-bottom: 20px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: start;
+}
+
+.card {
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.textBlock {
+  max-width: 100%;
+  height: 44px;
+  overflow: hidden;
+
+  p {
+    line-height: 22px;
+    height: 22px;
+    overflow: hidden;
+    margin: 0;
+  }
+}
